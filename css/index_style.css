@@ -1,0 +1,372 @@
+:root{
+    --bg-gray : #F5F5F5;
+    --bg-white :#FFF;
+    --base-color : rgb(0,120,255);
+    --low-base-color:rgba(0,120,255,0.2);
+    --titles-color:#1E1E1E;
+}
+body{
+    background-color: var(--bg-gray);
+    color:#4e4e4e;
+}
+.sub-title{
+    font-weight: 600;
+    color: var(--titles-color);
+    font-size: 1.1rem;
+}
+.full-box{
+    padding:3.5rem;
+    background-color: var(--bg-white);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+/*============Start Navbar============*/
+nav{
+    color: white !important;
+    background-color: #1e1e1e;
+}
+nav .navbar-brand{
+    font-size: 1.8rem !important;
+    font-weight: 620;
+    
+}
+nav .nav-item {
+    position: relative;
+}
+nav .active::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    left: 5%;
+    top: 95%;
+    background-color: white;
+}
+nav .nav-item::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    left: 5%;
+    top: 95%;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+nav .nav-item:hover::before{
+    width: 90%;
+}
+nav .nav-link {
+    color:white;
+    font-size: 16px !important;
+    font-weight: 600;
+}
+nav .dropdown{
+    overflow: hidden;
+}
+nav .dropdown:hover{
+    overflow:visible;
+}
+nav .dropdown-menu{
+    border-radius: 0;
+    box-shadow:  1px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+nav .dropdown-menu li a{
+    font-size: 0.9rem;
+    font-weight: 400 !important;
+    padding: 0.6rem 2rem;
+}
+nav .dropdown .perant-nest{
+    opacity: 0;
+    top: 102% !important;
+    right: auto;
+    left: 0;
+    display: none;
+    transition: all 1s;
+}
+nav .dropdown:hover .perant-nest{
+    opacity: 1;
+    display: block;
+}
+nav .dropend .nest{
+    opacity: 0;
+    top: 0;
+    right: 90%;
+    z-index: 1100;
+    display: none !important;
+    transition: all 1.5s;
+}
+nav .dropend:hover .nest{
+    opacity: 1;
+    right: 99%;
+    display: block !important;
+}
+.dropend .dropdown-toggle::after {
+    margin-left:20%;
+}
+button.navbar-toggler:focus{
+    border: 0;
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="false"] i.fa-xmark{
+    display: none;
+} 
+.navbar-toggler[aria-expanded="true"] i.fa-bars{
+    display:none;
+} 
+div.collapse.show{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 80vh;
+    padding-left: 20px;
+}
+
+/*============End Navbar============*/
+/*============Start Header============*/ 
+header{
+    background-image: url(../images/hero-bg.jpg);
+    background-position:center center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background: url(../images/hero-bg.jpg) center center cover fixed; */
+}
+header .overlay{
+    background-color:rgba(0, 0, 0, 0.6);
+    height: 100%;
+    text-align: center;
+}
+header .overlay h1{
+    font-size: 4rem;
+    font-weight: 600;
+    
+}
+header .overlay p{
+    font-weight: 600;
+    font-size: 2.5rem;
+    position: relative;
+    text-align: center;
+
+}
+header .overlay p::before{
+    content: "";
+    font-size: 2.5rem;
+    font-weight: 600;
+    animation: conentprag 20s infinite;
+}
+@keyframes conentprag{
+    0%{content:"D";}    
+    2%{content:"De";}
+    4%{content:"Des";}
+    6%{content:"Desi";}
+    8%{content:"Desig";}
+    10%{content:"Design";}
+    12%{content:"Designe";}
+    16%{content:"Designer";}
+    17%{content:"Designe";}
+    18%{content:"Design";}
+    19%{content:"Desig";}
+    20%{content:"Desi";}
+    21%{content:"Des";}
+    22%{content:"De";}
+    24%{content:"Dev";}
+    26%{content:"Deve";}
+    28%{content:"Devel";}
+    30%{content:"Develo";}
+    32%{content:"Develop";}
+    34%{content:"Develope";}
+    38%{content:"Developer";}
+    39%{content:"Develop";}
+    40%{content:"Develo";}
+    41%{content:"Devel";}
+    42%{content:"Deve";}
+    43%{content:"Dev";}
+    44%{content:"De";}
+    45%{content:"D";}
+    46%{content:"F";}
+    48%{content:"Fr";}
+    50%{content:"Fre";}
+    52%{content:"Free";}
+    54%{content:"Freel";}
+    56%{content:"Freela";}
+    58%{content:"Freelan";}
+    60%{content:"Freelanc";}
+    61%{content:"Freelance";}
+    64%{content:"Freelancer";}
+    65%{content:"Freelance";}
+    66%{content:"Freelanc";}
+    67%{content:"Freelan";}
+    68%{content:"Freela";}
+    69%{content:"Freel";}
+    70%{content:"Free";}
+    71%{content:"Fre";}
+    72%{content:"Fr";}
+    73%{content:"F";}
+    74%{content:"P";}
+    75%{content:"Ph";}
+    76%{content:"Pho";}
+    77%{content:"Phot";}
+    78%{content:"Photo";}
+    79%{content:"Photog";}
+    80%{content:"Photogr";}
+    81%{content:"Photogra";}
+    82%{content:"Photograp";}
+    83%{content:"Photograph";}
+    84%{content:"Photographe";}
+    88%{content:"Photographer";}
+    89%{content:"Photographe";}
+    90%{content:"Photograph";}
+    91%{content:"Photograp";}
+    92%{content:"Photogra";}
+    93%{content:"Photogr";}
+    94%{content:"Photog";}
+    95%{content:"Photo";}
+    96%{content:"Phot";}
+    97%{content:"Pho";}
+    98%{content:"Ph";}
+    99%{content:"P";}
+    100%{
+        content: "D";
+        
+        }
+    }
+header .overlay p::after{
+    content: "";
+    position: absolute;
+    top:10;
+    bottom: 5;
+    width: 6px;
+    background-color: white;
+    opacity: 0;
+    animation: afterprag 0.5s infinite ;
+}
+@keyframes afterprag{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+/*============End Header============*/
+/*============Start About============*/
+.skills p{
+    padding: 0px !important;
+    margin: 1.2rem 0rem 0.3rem;
+}
+.skills .progress{
+    background-color: var(--low-base-color);
+}
+.about-info h2::before{
+    content: "";
+    position: absolute;
+    width: 22%;
+    height: 3px;
+    background-color: var(--base-color);
+    top: 120%;
+    left: 0;
+    
+}
+.about-info p{
+    font-size: 1.3rem;
+}
+/*============End About============*/
+/*============Start Services============*/
+.title{
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.title h1{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--titles-color);
+    text-transform: uppercase;
+}
+.title::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: var(--base-color);
+    top: 90%;
+    left: calc(50% - 15px);
+}
+#services .cards{
+    box-shadow: #1e1e1e57 1px 1px 10px ;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.ico-card{
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 10px var(--base-color);
+    transition: all 0.5s ease;
+}
+#services .cards:hover .ico-card{
+    color: #fff;
+    background-color: var(--base-color);
+    box-shadow: 0 0 0 10px var(--low-base-color);
+}
+#services .counter{
+    background-image: url(../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center
+}
+#services .counter .overlay{
+    background-color: var(--base-color); 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#services .counter .row{
+    color: var(--bg-white);
+}
+#services .counter .ico-card{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/*============End Services============*/
+/*============Start work============*/
+#work .cards{
+    box-shadow: #1e1e1e57 0 13px 8px -10px  ;
+    
+    
+}
+#work .cards img{
+    transition: all 1s;
+}
+#work .cards:hover img{
+    transform: scale(1.3);
+}
+#work .cards .card-content{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+/*============End work============*/
+/*============Start Testimonial============*/
+
+.testimonial {
+    background-image: url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: var(--bg-white) !important;
+    overflow: hidden;
+}
+.testimonial .overlay{
+    background-color: var(--base-color); 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.testimonial .carousel-item{
+    text-align: center;
+    color: var(--bg-white) !important;
+}
+.testimonial .carousel-indicators [data-bs-target]{
+    
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+/*============End Testimonial============*/

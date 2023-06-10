@@ -1,0 +1,14 @@
+@media screen and (max-width : 720px) {
+    header .overlay h1{
+        font-size: 3rem;
+        font-weight: 600;
+        
+    }
+    header .overlay p{
+        font-weight: 600;
+        font-size: 2rem;
+        position: relative;
+        text-align: center;
+    
+    }
+}
